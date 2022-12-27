@@ -1,0 +1,17 @@
+﻿a:link {
+    text-decoration: none;
+    font-size:14px;
+    font-family:"Segoe UI";
+    font-style:normal
+
+}
+a:hover{
+    font-size:15px;
+    position: relative;
+        z-index: 1;
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        animation: illuminate 2s ease-out infinite;
+}
+

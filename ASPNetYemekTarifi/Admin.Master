@@ -1,0 +1,140 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="ASPNetYemekTarifi.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Kullanici.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .aotu-style1 {
+            width: 100%;
+        }
+
+        .auto-style3 {
+            text-align: center;
+        }
+
+        .auto-style4 {
+            height: 26px;
+        }
+
+        .auto-style6 {
+            border-style: none;
+            border-color: inherit;
+            border-width: medium;
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            height: 48px;
+            width: 103px;
+        }
+        .auto-style7 {
+            height: 77px;
+           
+            position:center;
+           
+        }
+        .auto-style8 {
+            height: 20px;
+      
+            position:center;
+
+        }
+        .auto-style9 {
+            height: auto;
+            float: left;
+            width: auto;
+        }
+        .auto-style10 {
+            height: 404px;
+            position: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div  background-color: #00CC66;" class="auto-style7"></div>
+        <div class="auto-style8"></div>
+        <div class="auto-style10">
+
+            <div style="background-color: #E94BA2; margin-left: 0px; float: left; width: 200px; height: auto">
+                <div class="auto-style3">
+                    <table class="aotu-style1">
+                        <tr>
+                            <td>
+                                <h2><strong>MENÜLER</strong></h2>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="auto-style4"><strong>
+                            <input id="Button2" type="button" value="Geri" onclick='javascript: history.go(-1)' class="auto-style6" /></strong></td>
+
+                        </tr>
+                        <tr>
+                            <td style="border-top-style: solid; border-top-width: thin; border-top-color: #000000; color: #000000;">
+                                <h3><a href="Kategoriler.aspx"><strong>Kategoriler</strong></a></h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border-top-style: solid; border-top-width: thin; border-top-color: #000000; color: #000000;">
+                                <h3><a href="Yemekler.aspx"><strong>Yemekler</strong></a></h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border-top-style: solid; border-top-width: thin; border-top-color: #000000; color: #000000;">
+                                <h3><a href="Yorumlar.aspx"><strong>Yorumlar</strong></a></h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border-top-style: solid; border-top-width: thin; border-top-color: #000000">
+                                <h3 style="width: 194px"><a href="Mesajlar.aspx"><strong>Mesajlar</strong></a></h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border-top-style: solid; border-top-width: thin; border-top-color: #000000">
+                                <h3><a href="GununYemegiAdmin.aspx"><strong>Günün Yemeği</strong></a></h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            
+                                <td style="border-top-style: solid; border-top-width: thin; border-top-color: #000000">
+                                    <h3><a href="Tarifler.aspx"><strong>Tarifler</strong></a></h3>
+                            </td>
+                          
+                        </tr>
+                        <tr>
+                            <td style="border-top-style: solid; border-top-width: thin; border-top-color: #000000">
+                                <h3><a href="HakkımızdaAdmin.aspx"><strong>Hakkımızda</strong></a></h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div style="background-color: #E94BA2; margin-left: 50px" class="auto-style9">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+        </div>
+
+    </form>
+</body>
+</html>
